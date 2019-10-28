@@ -26,11 +26,15 @@
     }
 }
 
-// .planning__bg {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-// }
+.planning__bg {
+    position: absolute;
+    top: -10%;
+    left: -25%;
+    z-index: -2;
+    width: 632px;
+    height: 505px;
+    opacity: 0.3;
+}
 
 .planning__info {
     display: flex;
