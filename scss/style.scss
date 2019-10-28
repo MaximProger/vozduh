@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: "GothamPro"; 
+  font-size: 20px;
+  line-height: 1.6;
+  color: #fff;
+  background-image: linear-gradient(172deg, #266aa0 10%, #081f73 87%);
+
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "GothamPro"; 
+  src: url("../fonts/GothamPro.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  } 
+
+  // font-family: 'Didact Gothic', sans-serif;
+
+  /* Import blocks*/
+
+@import 'blocks/container';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/intro';
+@import 'blocks/planing';
+@import 'blocks/poll';

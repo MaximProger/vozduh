@@ -1,0 +1,56 @@
+.planning {
+    padding-top: 95px;
+}
+
+.planning__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planning__content {
+    width: 100%;
+    max-width: 33.87%;
+    position: relative;
+}
+
+.planning__title {
+    font-family: Didact Gothic;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.07;
+    margin-bottom: 25px;
+
+    span {
+        color: #ff722b;
+    }
+}
+
+// .planning__bg {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+// }
+
+.planning__info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 50%;
+    width: 100%;
+}
+
+.planning__item {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    
+}
+
+.planning__item__text {
+    margin-left: 15px;
+    font-size: 18px;
+    line-height: 1.33;
+}
+

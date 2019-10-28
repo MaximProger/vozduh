@@ -1,0 +1,120 @@
+.intro {
+    background-image: linear-gradient(172deg, #266aa0 10%, #081f73 87%);
+    position: relative;
+    z-index: -1;
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.intro__content {
+    width: 100%;
+    max-width: 56%;
+}
+
+.intro__title {
+    font-family: Didact Gothic;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.07;
+    margin-bottom: 25px;
+}
+
+.intro__title__link {
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px dashed #fff;
+    color: #fff;
+    position: relative;
+    
+}
+
+.intro__title__link__bg {
+    position: absolute;
+    width: 85%;
+    height: 200%;
+    background-color: rgba(111,20,171,0.5);
+    top: -25%;
+    left: 5%;
+    z-index: -1;
+    border-radius: 125px 65px 120px 55px;
+}
+
+.intro__text {
+    width: 55.555%;
+
+    p {
+        margin-bottom: 10px;
+    }
+}
+
+.intro__advant {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.intro__advant__item {
+    width: 100%;
+    max-width: 50%;
+    margin-bottom: 54px;
+}
+
+.intro__advant__title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.intro__advant__num {
+    font-size: 48px;
+    line-height: normal;
+    position: relative;
+
+    .plus {
+        font-size: 38px;
+    }
+
+    .sm {
+        font-size: 22px;
+    }
+}
+
+
+.intro__advant__bg {
+    position: absolute;
+    top: 0;
+    left: -4%;
+    z-index: -2;
+}
+
+.intro__photo {
+    position: relative;
+}
+
+.intro__logo {
+    width: 438px;
+    height: 442px;
+    max-width: 100%;
+}
+
+.intro__bg {
+    position: absolute;
+    
+    &--violet {
+        top: -8%;
+        left: -35%;
+        z-index: -3;
+    }
+
+    &--blue {
+        top: 15%;
+        left: 5%;
+        z-index: -2;
+    }
+}
