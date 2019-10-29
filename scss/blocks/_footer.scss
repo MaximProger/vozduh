@@ -15,6 +15,12 @@
     span {
         margin-left: 30px;
     }
+
+    @media (max-width: 320px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
 }
 
 .footer__social {
