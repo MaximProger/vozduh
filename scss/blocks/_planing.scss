@@ -102,6 +102,18 @@
     @media (max-width: 1024px) {
         max-width: 100%;
     }
+
+    @media (max-width: 320px) {
+        display: none;
+    }
+
+    &--slider {
+        display: none;
+
+        @media (max-width: 320px) {
+            display: flex;
+        }
+    }
 }
 
 .planning__item {
