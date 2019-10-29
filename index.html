@@ -7,6 +7,9 @@
     <script src="https://kit.fontawesome.com/41064ceb63.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Vozduh</title>
 </head>
 <body>
@@ -44,13 +47,13 @@
                 <div class="intro__content">
                     <h1 class="intro__title">Выдающийся 
                             имидж: гипотезы и теории
-                            глазами <a href="#" class="intro__title__link">современников <div class="intro__title__link__bg"></div></a>
+                            глазами <a href="#" class="intro__title__link" data-modal="#modal-1">современников <div class="intro__title__link__bg"></div></a>
                             
                         </h1>
                             
 
                     <div class="intro__text">
-                        <p>Повышение жизненных стандартов неестественно экономит селлинг. <a href="#" class="intro__text__link"><i class="fas fa-question-circle"></i></a></p>
+                        <p>Повышение жизненных стандартов неестественно экономит селлинг. <a href="#" class="intro__text__link" data-modal="#modal-2"><i class="fas fa-question-circle"></i></a></p>
                         
                         <p>Несмотря на сложности, рекламное сообщество синхронизирует бренд.</p>
                     </div>
@@ -440,6 +443,30 @@
         </div>
     </footer>
     <!-- / Footer -->
+
+    <!-- Modal -->
+    <div class="modal" id="modal-1">
+        <div class="modal__dialog">
+            <div class="modal_text">
+                <span>хипстеры;</span>
+                <span>производители всяких
+                ненужных штук;</span>
+                <span>стартаперы и прочие.</span>
+            </div>
+            <img src="img/fill-1-copy-3.svg" alt="Modal Bg" class="modal__dialog__bg">
+        </div>
+    </div>
+
+    <div class="modal" id="modal-2">
+        <div class="modal__dialog modal__dialog--2">
+            <div class="modal_text">
+                1-е место в главном рейтинге России 1917 года по версии Lenin.
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 
 </body>
 </html>
