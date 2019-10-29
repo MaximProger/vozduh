@@ -80,8 +80,8 @@ $slick-opacity-not-active: 0.25 !default;
     outline: none;
     &:hover, &:focus {
         outline: none;
-        background: transparent;
-        color: transparent;
+        background: #ff722b;
+        color: #ff722b;
         &:before {
             opacity: $slick-opacity-on-hover;
         }

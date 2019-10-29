@@ -1,9 +1,15 @@
 .poll {
     padding-top: 10px;
     background-color: #ffffff;
+    
 
     @media (max-width: 768px) {
         padding-top: 0;
+    }
+
+    @media (max-width: 320px) {
+        padding-bottom: 100px;
+        position: relative;
     }
 }
 
@@ -101,19 +107,42 @@
     }
 }
 
-.poll__stat__item {
-    padding-bottom: 30px;
+.poll__stat {
+
+    padding-bottom: 50px;
 
     @media (max-width: 320px) {
-        padding-bottom: 10px;
+        display: none;
     }
+
+    &--sm {
+        display: none;
+
+        @media (max-width: 320px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -20px;
+            padding-bottom: 0px;
+        }
+    }
+}
+
+.poll__stat__item {
+    padding-bottom: 30px;
 
     &:last-child {
         padding-bottom: 0px;
 
         @media (max-width: 320px) {
-            padding-bottom: 15px;
+            padding-bottom: 30px;
         }
+    
+    }
+
+    @media (max-width: 320px) {
+        width: 31%;
+        padding-bottom: 30px;
     }
 
     
@@ -127,6 +156,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+
+    @media (max-width: 320px) {
+        display: block;
+    }
 }
 
 .poll__stat__title {
@@ -140,7 +173,7 @@
     }
 
     @media (max-width: 320px) {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
@@ -153,12 +186,25 @@
         font-size: 12px;
     }
 
+    @media (max-width: 320px) {
+        font-size: 10px;
+        margin-top: 14px;
+    }
+
 }
 
 .poll__stat__body {
     display: flex;
     width: 100%;
     height: 90px;
+
+    @media (max-width: 320px) {
+        height: 400px;
+    }
+
+    @media (max-width: 320px) {
+        display: block;
+    }
 }
 
 .poll__stat__elem {
@@ -199,6 +245,10 @@
     &--8 {
         background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.32)), linear-gradient(to bottom, #f95a26, #f95a26);
     }
+
+    @media (max-width: 320px) {
+        justify-content: center;
+    }
 }
 
 .poll__stat__percent {
@@ -207,7 +257,7 @@
     color: #ffffff;
 
     @media (max-width: 320px) {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
 
@@ -220,6 +270,20 @@
 
     @media (max-width: 320px) {
         font-size: 10px;
+        font-weight: 400;
     }
 }
 
+.poll_light__strip {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    bottom: -2px;
+    right: 0;
+
+    @media (max-width: 320px) {
+        display: block;
+    }
+}

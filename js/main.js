@@ -22,13 +22,13 @@ $ (function() {
         }, 200);
     });
 
-    $('.modal').keydown(function(e) {
-        // ESCAPE key pressed
-        if (e.keyCode == 27) {
-            $('.modal').removeClass('show');
-            $('body').removeClass('no-scroll');
-        }
-    });
+    // $('.modal').keydown(function(e) {
+    //     // ESCAPE key pressed
+    //     if (e.keyCode == 27) {
+    //         $('.modal').removeClass('show');
+    //         $('body').removeClass('no-scroll');
+    //     }
+    // });
 
     $('.modal').on('click', function(event) {
 
@@ -56,14 +56,23 @@ $ (function() {
         $("#nav").toggleClass("show");
     });
 
-    // Slider
-
-    let planWidth = $("body").innerWidth();
-
+    // Slider https://kenwheeler.github.io/slick/
 
     /* Работает только, если изначально выполнячеться условие. 
     С обработчиком собыйтий пока не сообразил как. Решил оставить так. */
 
+    // $('body').on('resize', function(){
+    //     var body = $(this); 
+    //     console.log(body.width());
+    //     // if (body.width() <= 320) {
+    //     //     $('.planning__info--slider').addClass('autoplay');
+    //     //  } else {
+    //     //     $('.planning__info--slider').removeClass('autoplay');
+    //     //  }
+    // });
+
+    let planWidth = $("body").innerWidth();
+        
     if (planWidth <= 320) {
         $('.planning__info--slider').addClass('autoplay');
     } else {
@@ -74,16 +83,13 @@ $ (function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
+        dots: true,
         autoplaySpeed: 2000,
       });
 
-      /* More info */
+    
 
-      if (planWidth <= 320) {
-        $('.planning__info--slider').addClass('autoplay');
-    } else {
-        $('.planning__info--slider').removeClass('autoplay');
-    }
+    /* More info */
 
     const itemCall = $('[data-more]');
 
@@ -99,7 +105,5 @@ $ (function() {
         });
 
     }
-
-
 
 });
